@@ -1,24 +1,23 @@
-package modelo;
+package app;
 
-public class Retangulo {
-	private int altura;
-	private int largura;
-	public int getAltura() {
-		return altura;
+import modelo.Retangulo;
+import modelo.Quadrado;
+
+public class Principal {
+	public static void main(String[] args) {
+		
+		Retangulo r = new Retangulo();
+		
+		r.setAltura(10);
+		r.setLargura(20);
+		r.imprimir();
+		
+		System.out.println("---------");
+		
+		Quadrado q = new Quadrado();
+		q.setAltura(15);
+		q.setLargura(15);
+		q.imprimir();
 	}
-	public void setAltura(int altura) {
-		this.altura = altura;
-	}
-	public int getLargura() {
-		return largura;
-	}
-	public void setLargura(int largura) {
-		this.largura = largura;
-	}
-	
-	public void imprimir() {
-		System.out.println("Altura:"+ this.altura) ;
-		System.out.println("Largura:"+ this.largura) ;
-	}
-	
+
 }
